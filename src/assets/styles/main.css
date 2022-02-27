@@ -6,6 +6,10 @@
   html {
     @apply font-sans;
   }
+
+  h1 {
+    @apply my-4;
+  }
 }
 
 @layer utilities {

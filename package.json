@@ -46,6 +46,7 @@
     "build:eleventy": "npx @11ty/eleventy",
     "build:vite": "npx vite build",
     "lint": "run-s lint:*",
+    "lint:liquid": "npx prettier --check \"src/**/*.liquid\"",
     "lint:html": "npx prettier --check \"src/**/*.html\"",
     "lint:stylelint": "npx stylelint \"src/**/*.css\"",
     "lint:eslint": "npx eslint --ext .js src/",
