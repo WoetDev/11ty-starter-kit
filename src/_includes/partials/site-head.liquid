@@ -39,6 +39,10 @@
 <meta property="og:description" content="{{ meta.desc }}" />
 {%- endif -%}
 
+{%- if ignore -%}
+<meta name="robots" content="noindex"/>
+{%- endif -%}
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="alternate icon" href="/favicon.ico" type="image/png" sizes="48x48" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="192x192" />
@@ -56,3 +60,13 @@
 <!-- https://www.filamentgroup.com/lab/load-css-simpler/ -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" media="print"
   onload="this.media='all'; this.onload=null;">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ node.tracking.gtag }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{ node.tracking.gtag }}');
+</script>
