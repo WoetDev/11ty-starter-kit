@@ -9,9 +9,9 @@ export default defineConfig({
     outDir: '../dist',
     rollupOptions: {
       input: {
-        404: resolve(__dirname, '_site', '404.html'),
-        main: resolve(__dirname, '_site', 'index.html'),
-        about: resolve(__dirname, '_site', 'about', 'index.html'),
+        404: resolve(__dirname, '_site', '404.liquid'),
+        main: resolve(__dirname, '_site', 'index.liquid'),
+        about: resolve(__dirname, '_site', 'about', 'index.liquid'),
       },
     },
     emptyOutDir: true,
@@ -25,8 +25,8 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        name: '11st-Starter-Kit',
-        short_name: '11st-Starter-Kit',
+        name: '11ty-Starter-Kit',
+        short_name: '11ty-Starter-Kit',
         description: '11ty, powered by Vite with Tailwind CSS and Alpine.js.',
         scope: '/',
         start_url: '/',

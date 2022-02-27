@@ -1,11 +1,22 @@
-# 📦 11st-Starter-Kit
+# 📦 11ty-prioflux-starter
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ec6da587-72ba-490a-ad4b-167802a9c197/deploy-status)](https://app.netlify.com/sites/11st-starter-kit/deploys)
 
-[11ty](https://www.11ty.dev/), powered by [Vite](https://vitejs.dev/)
-with [Tailwind CSS](https://tailwindcss.com) and
-[Alpine.js](https://github.com/alpinejs/alpine/).
+## Feature
+* [11ty](https://www.11ty.dev/) with Liquid templating
+* Styling with [Tailwind CSS](https://tailwindcss.com)
+* Progressive enhancement with [Alpine.js](https://github.com/alpinejs/alpine/).
+* PWA enabled by [Vite](https://vitejs.dev/)
+* Hosting with Netlify
+* Image optimization
+  * Appropriate format. (e.g. favor webp than jpg or png)
+  * Appropriate compression. (e.g. drop the image quality to 80-85%)
+  * Appropriate display size. (e.g. serve smaller images for mobile, and bigger one for desktop)
+  * Loading lazily. (e.g. only load when user scrolls to it)
+* SEO and social sharing core data
+* Insights with Google Analytics
+* Minifying HTML, JavaScript, CSS - Automate Inline
 
 ## Install Dependencies
 

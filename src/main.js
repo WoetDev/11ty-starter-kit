@@ -1,4 +1,4 @@
-import './styles/main.css';
+import './assets/styles/main.css';
 
 import Alpine from 'alpinejs';
 

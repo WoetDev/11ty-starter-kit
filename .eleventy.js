@@ -1,14 +1,19 @@
 const fs = require('fs');
+const automaticNoopener = require('eleventy-plugin-automatic-noopener');
 
 module.exports = function (config) {
+  config.addFilter('values', Object.values);
+  config.addPlugin(automaticNoopener, {
+    noreferrer: true
+  });
+
   config.setLiquidOptions({
     dynamicPartials: true,
   });
 
   // Static assets to pass through
-  config.addPassthroughCopy('./src/images');
   config.addPassthroughCopy('./src/public');
-  config.addPassthroughCopy('./src/styles');
+  config.addPassthroughCopy('./src/assets');
   config.addPassthroughCopy('./src/main.js');
 
   return {

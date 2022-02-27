@@ -1,0 +1,11 @@
+{
+  "data": "header",
+  "title": "Header",
+  "links": [
+    { "text": "Over", "url": "/over/", "icon": "FingerPrintIcon" },
+    { "text": "Contact", "url": "/contact/", "icon": "AtSymbolIcon" }
+  ],
+  "cat": "Laat iets weten",
+  "logo": "../images/logo.svg",
+  "company": "Prioflux"
+}

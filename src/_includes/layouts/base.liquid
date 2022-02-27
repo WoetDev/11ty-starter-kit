@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="leading-tight text-gray-900 antialiased" lang="en">
+<html class="antialiased leading-tight text-gray-900" lang="en">
   <head>
-    {% include "partials/site-head.html" %}
+    {% include "partials/site-head" %}
+
   </head>
   <body
     class="min-h-screen bg-white"
@@ -9,11 +10,11 @@
     x-data="{ open: false }"
     x-init="() => { setTimeout(() => { open = true }, 1500); }"
   >
-    {% include "partials/site-header.html" %}
+    {% include "partials/site-header" %}
 
-    <div class="py-10">{% block content %}{% endblock %}</div>
+    <div class="py-10 contain">{% block content %}{% endblock %}</div>
 
-    {% include "partials/banner.html" %}
+    {% include "partials/banner" %}
 
     <script type="module" src="/main.js"></script>
   </body>

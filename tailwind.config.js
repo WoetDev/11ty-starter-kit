@@ -1,11 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./src/**/*.html', './src/**/*.md'],
+  content: ['./src/**/*.html', './src/**/*.md', './src/**/*.liquid'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Ubuntu', ...defaultTheme.fontFamily.sans, 'sans-serif'],
       },
     },
   },
