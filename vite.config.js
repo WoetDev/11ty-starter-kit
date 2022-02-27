@@ -9,9 +9,10 @@ export default defineConfig({
     outDir: '../dist',
     rollupOptions: {
       input: {
-        404: resolve(__dirname, '_site', '404.liquid'),
-        main: resolve(__dirname, '_site', 'index.liquid'),
-        about: resolve(__dirname, '_site', 'about', 'index.liquid'),
+        404: resolve(__dirname, '_site', '404.html'),
+        main: resolve(__dirname, '_site', 'index.html'),
+        over: resolve(__dirname, '_site', 'over', 'index.html'),
+        contact: resolve(__dirname, '_site', 'contact', 'index.html'),
       },
     },
     emptyOutDir: true,
@@ -25,9 +26,9 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        name: '11ty-Starter-Kit',
-        short_name: '11ty-Starter-Kit',
-        description: '11ty, powered by Vite with Tailwind CSS and Alpine.js.',
+        name: '11ty-prioflux-starter',
+        short_name: '11ty-prioflux-starter',
+        description: '11ty starter for Prioflux static site projects',
         scope: '/',
         start_url: '/',
         display: 'standalone',

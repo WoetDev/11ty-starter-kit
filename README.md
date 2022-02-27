@@ -16,7 +16,7 @@
   * Loading lazily. (e.g. only load when user scrolls to it)
 * SEO and social sharing core data
 * Insights with Google Analytics
-* Minifying HTML, JavaScript, CSS - Automate Inline
+* Minifying HTML, JavaScript, CSS - Automate Inline 
 
 ## Install Dependencies
 
@@ -49,7 +49,7 @@ npm run build
 npm run preview
 ```
 
-Open http://localhost:5000/ to view it in your browser.
+Open http://localhost:4173/ to view it in your browser.
 
 Your code is now ready to be deployed!
 

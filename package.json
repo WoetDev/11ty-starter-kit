@@ -1,6 +1,6 @@
 {
-  "name": "11st-starter-kit",
-  "description": "11ty, powered by Vite with Tailwind CSS and Alpine.js.",
+  "name": "11ty-prioflux-starter",
+  "description": "11ty starter for Prioflux static site projects",
   "version": "2.0.0",
   "engines": {
     "node": "16.x.x",
@@ -9,7 +9,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:stefanfrede/11st-starter-kit.git"
+    "url": "git@github.com:WoetDev/11ty-starter-kit.git"
   },
   "keywords": [
     "alpinejs",
@@ -22,15 +22,12 @@
     "vite"
   ],
   "author": {
-    "name": "Stefan Frede",
-    "email": "stefan@frede.dev"
+    "name": "Woet",
+    "email": "wouter@prioflux.com"
   },
   "license": "MIT",
   "private": true,
-  "bugs": {
-    "url": "https://github.com/stefanfrede/11st-starter-kit/issues"
-  },
-  "homepage": "https://11st-starter-kit.netlify.app",
+  "homepage": "https://11ty-starter-kit.netlify.app/",
   "lint-staged": {
     "*.html": "prettier --write",
     "*.css": "stylelint --cache --fix",
