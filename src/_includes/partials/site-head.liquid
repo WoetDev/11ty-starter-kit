@@ -62,11 +62,17 @@
   onload="this.media='all'; this.onload=null;">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ node.tracking.gtag }}"></script>
-<script>
+<script type="module" async src="https://www.googletagmanager.com/gtag/js?id={{ node.tracking.gtag }}"></script>
+<script type="module">
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', '{{ node.tracking.gtag }}');
+</script>
+
+<!-- Image lazyloading -->
+<script type="module" async>
+  import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";
+  const lazyload = new Lazyload();
 </script>

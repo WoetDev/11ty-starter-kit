@@ -7,6 +7,9 @@ export default defineConfig({
   root: '_site',
   build: {
     outDir: '../dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    manifest: true,
     rollupOptions: {
       input: {
         404: resolve(__dirname, '_site', '404', 'index.html'),

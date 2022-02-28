@@ -7,8 +7,21 @@
     @apply font-sans;
   }
 
+  img {
+    max-width: 100%;
+    @apply block max-w-full w-full h-auto ;
+  }
+  
   h1 {
-    @apply my-4;
+    @apply text-4xl font-bold mt-8 mb-4;
+  }
+
+  li {
+    @apply text-lg my-2;
+  }
+
+  a {
+    @apply text-cyan-500 hover:underline;
   }
 }
 

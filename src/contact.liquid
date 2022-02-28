@@ -7,6 +7,15 @@ meta:
     with 11ty, powered by Vite with Tailwind CSS and Alpine.js.'
 ---
 
-<h1>Contact</h1>
+<h1>{{ contact.title }}</h1>
 
-You've reached the contact page!
+<p>{{ contact.description }}</p>
+
+<div>
+  <h2 class="text-lg">All I have for you here is a bunch of optimized cat pictures</h2>
+  {% for i in (1..8) %}
+    {% capture img_path %}./src/public/images/placeholder_img_{{ i }}.jpg{% endcapture %}
+    {% capture img_alt %}cat_{{i}}{% endcapture %}
+    {% image img_path, img_alt, "(min-width: 30em) 50vw, 100vw" %}
+  {% endfor %}
+</div>

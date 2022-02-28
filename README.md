@@ -9,14 +9,16 @@
 * Progressive enhancement with [Alpine.js](https://github.com/alpinejs/alpine/).
 * PWA enabled by [Vite](https://vitejs.dev/)
 * Hosting with Netlify
+* Content Security Policy
 * Image optimization
   * Appropriate format. (e.g. favor webp than jpg or png)
   * Appropriate compression. (e.g. drop the image quality to 80-85%)
   * Appropriate display size. (e.g. serve smaller images for mobile, and bigger one for desktop)
   * Loading lazily. (e.g. only load when user scrolls to it)
-* SEO and social sharing core data
+* SEO and social sharing metadata
+* Web Vitals Optimization (LCP / CLS / FID)
 * Insights with Google Analytics
-* Minifying HTML, JavaScript, CSS - Automate Inline 
+* Minifying HTML, JavaScript, CSS
 
 ## Install Dependencies
 
